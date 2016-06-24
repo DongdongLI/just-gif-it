@@ -23,13 +23,19 @@ targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
+	
 }
 
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.1.0-1.2'
+	compile group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.1.0-1.2', classifier:'windows-x86'
+	compile group: 'org.bytedeco', name: 'javacv', version: '1.2'
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
+	compile group: 'com.madgag', name: 'animated-gif-lib', version: '1.2'
+	compile group: 'javax.inject', name: 'javax.inject', version: '1'
 }
 
 
